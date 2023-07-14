@@ -39,9 +39,9 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/">Kiro</Link>
-      <div>
+      <div className={styles.navitems}>
         {links.map(link =>(
-         <Link key={link.id} href={link.url}>{link.title}</Link>   
+         <Link  key={link.id} href={link.url}>{link.title}</Link>   
         ))}
       </div>
     </div>
